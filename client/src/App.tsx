@@ -12,7 +12,7 @@ class App extends React.Component {
 
   render(): JSX.Element {
     this.authModel.updateSession();
-    const routes: React.ReactNode = useRoutes(this.authModel.isUserLoggedIn);
+    const routes: React.ReactNode = useRoutes(false);
 
     return (
         <div>
